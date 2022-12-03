@@ -39,17 +39,26 @@
                     id="formDiscription"
                     rows="5" 
                     placeholder="Discription"></textarea>
-                    <button type="submit" class="Addlist" onclick="addTodo" >Add</button>
+                    <div>
+                        <button class="btn btn-primary" onclick="addTodo()">Add</button>
+                    </div>
+                   
             </div>
         </div>
-            <!-- List -->
+            <!-- To Do List -->
         <div class="col">
-          <div class="col" id="form-list">
-            <div class="form-lists">
-                <h4>Name</h4>
-                <p>Discription</p>
-                <div class="item-btn">
-                    <i class="fa-sharp fa-solid fa-square-xmark"></i>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div id="listdiv">
+                        <ul class="list-group list-group-flush" id="todoList" >
+                            <li class="list-group-item">
+                                <h4>Name</h4>
+                                <p>Discription</p>
+                                <div class="item-btn">
+                                    <i class="fa-sharp fa-solid fa-square-xmark"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
           </div>
